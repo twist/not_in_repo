@@ -32,7 +32,7 @@ class NotInRepo
 	end
 
 
-  def method_missing(method, *args)
+  def self.method_missing(method, *args)
           return @@data[:"#{method}"]
   end
 	
